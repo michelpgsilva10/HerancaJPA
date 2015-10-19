@@ -29,19 +29,19 @@ public class TesteJPA {
             e.printStackTrace();
         }
         
-        /*PessoaFisicaVO pf = new PessoaFisicaVO();
-        pf.setNome("Michel");
-        pf.setEndereco("Rua Roma, Jardim Itália, Cuiabá");
-        pf.setCpf("000.000.000-00");*/
+        PessoaFisicaVO pf = new PessoaFisicaVO();
+        pf.setNome("Seo Orlando");
+        pf.setEndereco("Paiguás, Cuiabá");
+        pf.setCpf("000.000.000-00");
         
-        PessoaJuridicaVO pj = new PessoaJuridicaVO();
+        /*PessoaJuridicaVO pj = new PessoaJuridicaVO();
         pj.setNome("Guru S.A.");
         pj.setEndereco("Rua Lixeira, Jardim Pextilência, Cuiabá");
         pj.setCnpj("0000000000000-00");
-        pj.setNomeResponsavel("Sidnééélson");
+        pj.setNomeResponsavel("Sidnééélson");*/
         
         gerenciadorEntidades.getTransaction().begin();
-        gerenciadorEntidades.persist(pj);
+        gerenciadorEntidades.persist(pf);
         gerenciadorEntidades.getTransaction().commit();
         
         
